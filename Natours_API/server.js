@@ -1,6 +1,14 @@
-const app = require('./app')
+/* eslint-disable prettier/prettier */
+const dotenv = require('dotenv');
+const app = require('./app');
 
-const port = 4000;
-app.listen(port, ()=>{
-    console.log(`App running on port ${port}...`);
-})
+dotenv.config({ path: './config.env' });
+
+ // eslint-disable-next-line no-console
+//console.log(process.env);
+
+const port = process.env.PORT || 4000;
+app.listen(port, () => {
+  // eslint-disable-next-line no-console
+  console.log(`App running on port ${port}...`);
+});

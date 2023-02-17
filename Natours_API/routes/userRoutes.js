@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable import/no-useless-path-segments */
+/* eslint-disable prettier/prettier */
 const  express  = require  ('express')
 
 
